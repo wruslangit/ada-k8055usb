@@ -1,0 +1,7 @@
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/wks-gnat/ada-k8055usb/exec$ ls -al 
+total 72
+drwxrwxr-x 2 wruslan wruslan  4096 Dec 29 18:34 .
+drwxrwxr-x 8 wruslan wruslan  4096 Dec 29 17:44 ..
+-rwxrwxr-x 1 wruslan wruslan 65320 Dec 29 18:34 main_ada_ck8055.xxx
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/wks-gnat/ada-k8055usb/exec$ 
+

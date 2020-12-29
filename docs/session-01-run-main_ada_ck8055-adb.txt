@@ -1,0 +1,32 @@
+File: session-01-run-main_ada_ck8055-adb.txt
+
+COMPILATION
+===========================================================
+gprbuild -d -P/home/wruslan/wks-gnat/ada-k8055usb/gpr_ada_ck8055.gpr -s -k
+Compile
+   [Ada]          main_ada_ck8055.adb
+   [C++]          cppk8055.cpp
+   [C]            ck8055.c
+   [Ada]          pkg_ada_dtstamp.adb
+Bind
+   [gprbind]      main_ada_ck8055.bexch
+   [Ada]          main_ada_ck8055.ali
+Link
+   [archive]      libgpr_ada_ck8055.a
+   [index]        libgpr_ada_ck8055.a
+   [link]         main_ada_ck8055.adb
+[2020-12-29 18:34:07] process terminated successfully, elapsed time: 01.75s
+
+EXECUTION
+===========================================================
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/wks-gnat/ada-k8055usb/exec$ ./main_ada_ck8055.xxx 
+2020-12-29 10:35:05.67753192346 Bismillah 3 times WRY
+2020-12-29 10:35:05.67753219896 Started main_ada_ck8055.adb program.
+
+
+2020-12-29 10:35:05.67753248869 Ended main_ada_ck8055.adb program.
+2020-12-29 10:35:05.67753274157 Alhamdulillah 3 times WRY
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/wks-gnat/ada-k8055usb/exec$ 
+===========================================================
+
+

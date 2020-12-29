@@ -1,0 +1,37 @@
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/wks-gnat/ada-k8055usb/obj$ ls -al
+total 296
+drwxrwxr-x 2 wruslan wruslan  4096 Dec 29 18:34 .
+drwxrwxr-x 8 wruslan wruslan  4096 Dec 29 17:44 ..
+-rw-rw-r-- 1 wruslan wruslan 11322 Dec 29 18:34 b__main_ada_ck8055.adb
+-rw-rw-r-- 1 wruslan wruslan 28207 Dec 29 18:34 b__main_ada_ck8055.ads
+-rw-rw-r-- 1 wruslan wruslan 13194 Dec 29 18:34 b__main_ada_ck8055.ali
+-rw-rw-r-- 1 wruslan wruslan 22976 Dec 29 18:34 b__main_ada_ck8055.o
+-rw-rw-r-- 1 wruslan wruslan     0 Dec 29 18:34 ck8055.c.stderr
+-rw-rw-r-- 1 wruslan wruslan     0 Dec 29 18:34 ck8055.c.stdout
+-rw-rw-r-- 1 wruslan wruslan    46 Dec 29 18:34 ck8055.cswi
+-rw-rw-r-- 1 wruslan wruslan   162 Dec 29 18:34 ck8055.d
+-rw-rw-r-- 1 wruslan wruslan 14688 Dec 29 18:34 ck8055.o
+-rw-rw-r-- 1 wruslan wruslan 34970 Dec 29 18:25 clang_ref_cache.db
+-rw-rw-r-- 1 wruslan wruslan     0 Dec 29 18:34 cppk8055.cpp.stderr
+-rw-rw-r-- 1 wruslan wruslan     0 Dec 29 18:34 cppk8055.cpp.stdout
+-rw-rw-r-- 1 wruslan wruslan    40 Dec 29 18:34 cppk8055.cswi
+-rw-rw-r-- 1 wruslan wruslan   176 Dec 29 18:34 cppk8055.d
+-rw-rw-r-- 1 wruslan wruslan 17672 Dec 29 18:34 cppk8055.o
+-rw-rw-r-- 1 wruslan wruslan  4326 Dec 29 18:25 gpr_ada_ck8055-loc.xml
+-rw-rw-r-- 1 wruslan wruslan  3838 Dec 29 18:25 gpsauto.cgpr
+-rw-rw-r-- 1 wruslan wruslan 33682 Dec 29 18:34 libgpr_ada_ck8055.a
+-rw-rw-r-- 1 wruslan wruslan   130 Dec 29 18:34 libgpr_ada_ck8055.deps
+-rw-rw-r-- 1 wruslan wruslan     0 Dec 29 18:34 main_ada_ck8055.adb.stderr
+-rw-rw-r-- 1 wruslan wruslan     0 Dec 29 18:34 main_ada_ck8055.adb.stdout
+-rw-rw-r-- 1 wruslan wruslan  4517 Dec 29 18:34 main_ada_ck8055.ali
+-rw-rw-r-- 1 wruslan wruslan   639 Dec 29 18:34 main_ada_ck8055.bexch
+-rw-rw-r-- 1 wruslan wruslan    45 Dec 29 18:34 main_ada_ck8055.cswi
+-rw-rw-r-- 1 wruslan wruslan  2472 Dec 29 18:34 main_ada_ck8055.o
+-rw-rw-r-- 1 wruslan wruslan     0 Dec 29 18:34 pkg_ada_dtstamp.adb.stderr
+-rw-rw-r-- 1 wruslan wruslan     0 Dec 29 18:34 pkg_ada_dtstamp.adb.stdout
+-rw-rw-r-- 1 wruslan wruslan 10904 Dec 29 18:34 pkg_ada_dtstamp.ali
+-rw-rw-r-- 1 wruslan wruslan    45 Dec 29 18:34 pkg_ada_dtstamp.cswi
+-rw-rw-r-- 1 wruslan wruslan 31888 Dec 29 18:34 pkg_ada_dtstamp.o
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/wks-gnat/ada-k8055usb/obj$ 
+
+
