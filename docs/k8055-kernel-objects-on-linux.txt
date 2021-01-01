@@ -1,0 +1,67 @@
+
+
+PLUG-IN THE USB K8055 BOARD, RUN dmesg
+===========================================================
+[26973.155440] usb 3-4: new low-speed USB device number 4 using xhci_hcd
+[26973.308636] usb 3-4: New USB device found, idVendor=10cf, idProduct=5500, bcdDevice= 0.00
+[26973.308644] usb 3-4: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[26973.308648] usb 3-4: Product: USB K8055
+[26973.308650] usb 3-4: Manufacturer: Velleman 
+[26973.392639] comedi: module is from the staging directory, the quality is unknown, you have been warned.
+[26973.394142] comedi: version 0.7.76 - http://www.comedi.org
+[26973.401422] comedi_usb: module is from the staging directory, the quality is unknown, you have been warned.
+[26973.424830] vmk80xx: module is from the staging directory, the quality is unknown, you have been warned.
+[26973.434588] comedi comedi0: driver 'vmk80xx' has successfully auto-configured 'K8055 (VM110)'.
+[26973.434686] usbcore: registered new interface driver vmk80xx
+[29342.373780] usb 3-4: usbfs: interface 0 claimed by usbfs while 'python' sets config #1
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github/ada-k8055usb/exec$ 
+
+PLUG-IN THE USB K8055 BOARD, CHECK LOADED KERNEL MODULES
+===========================================================
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github/ada-k8055usb/exec$ lsmod
+Module                  Size  Used by
+vmk80xx                16384  0
+comedi_usb             16384  1 vmk80xx
+comedi                 73728  2 comedi_usb,vmk80xx
+
+LOADABLE KERNEL OBJECTS
+============================================================
+/lib/modules/5.4.66-rt38/kernel/drivers/staging/comedi/drivers/vmk80xx.ko
+/lib/modules/5.4.66-rt38/kernel/drivers/staging/comedi/comedi_usb.ko
+/lib/modules/5.4.66-rt38/kernel/drivers/staging/comedi/comedi.ko
+
+SOURCE CODES FOR VELLEMAN BOARDS
+===========================================================
+/usr/src/linux-5.4.66/include/config/comedi/vmk80xx.h
+/usr/src/linux-5.4.66/drivers/staging/comedi/drivers/vmk80xx.c
+
+/usr/src/linux-5.4.66/drivers/staging/comedi/comedi_usb.h
+/usr/src/linux-5.4.66/drivers/staging/comedi/comedi_usb.c
+
+/usr/src/linux-5.4.66/include/config/comedi.h
+
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github/ada-k8055usb/exec$ ls -al /usr/local/bin | grep k8055 
+-rwxr-xr-x  1 root root   43896 Apr 18  2020 k8055
+-rw-r--r--  1 root root    5802 Nov 19 07:06 k8055_analog_datascope.py
+-rwxr-xr-x  1 root root    1528 Nov 19 09:09 k8055_analog_datascope.sh
+-rwxr-xr-x  1 root root 1142776 Apr 18  2020 k8055d
+-rw-r--r--  1 root root   11375 Nov 21 16:22 k8055_digital_datascope.py
+-rwxr-xr-x  1 root root    1538 Nov 19 09:09 k8055_digital_datascope.sh
+-rwxr-xr-x  1 root root  229336 Apr 18  2020 k8055gui
+-rwxr-xr-x  1 root root    8288 Nov 19 08:19 k8055-info-wry
+-rwxr-xr-x  1 root root 2016896 Apr 18  2020 k8055m
+-rwxr-xr-x  1 root root     374 Nov 19 17:04 k8055-MUST-README.sh
+-rwxr-xr-x  1 root root    3751 Nov 19 08:19 k8055.py
+-rwxr-xr-x  1 root root    6840 Nov 19 08:20 k8055qt.py
+-rwxr-xr-x  1 root root 2333296 Apr 18  2020 k8055s
+-rwxr-xr-x  1 root root     310 Nov 19 08:22 k8055-test1.sh
+-rwxr-xr-x  1 root root     888 Nov 19 08:22 k8055-test2.sh
+-rwxr-xr-x  1 root root     929 Nov 19 08:23 k8055-test3.sh
+-rwxr-xr-x  1 root root    2370 Nov 19 08:23 k8055testm.py
+-rwxr-xr-x  1 root root    1534 Nov 19 08:24 k8055test.py
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github/ada-k8055usb/exec$ 
+
+===========================================================
+ALHAMDULILLAH 3 TIMES WRY.
+===========================================================
+

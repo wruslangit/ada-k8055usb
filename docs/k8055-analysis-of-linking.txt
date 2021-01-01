@@ -1,0 +1,218 @@
+
+==========================================================
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github/ada-k8055usb/exec$ ldd main_ada_ck8055.xxx 
+	linux-vdso.so.1 (0x00007ffc1af2f000)
+	libgnarl-9.so.1 => /usr/lib/x86_64-linux-gnu/libgnarl-9.so.1 (0x00007f7368400000)
+	libgnat-9.so.1 => /usr/lib/x86_64-linux-gnu/libgnat-9.so.1 (0x00007f736808c000)
+	libgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007f7368071000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f7367e7f000)
+	libpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0 (0x00007f7367e5c000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f73684b4000)
+	libdl.so.2 => /lib/x86_64-linux-gnu/libdl.so.2 (0x00007f7367e54000)
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github/ada-k8055usb/exec$ 
+
+===========================================================
+
+===========================================================
+gprbuild: link of main_ada_ck8055.adb failed
+gprbuild: failed command was: 
+/usr/bin/g++ main_ada_ck8055.o b__main_ada_ck8055.o 
+/home/wruslan/github/ada-k8055usb/obj/pkg_ada_ck8055.o 
+/home/wruslan/github/ada-k8055usb/obj/pkg_aada_ck8055.o 
+/home/wruslan/github/ada-k8055usb/obj/pkg_ada_dtstamp.o 
+libgpr_ada_ck8055.a -O2 -lk8055 
+-L/home/wruslan/github/ada-k8055usb/obj/ 
+-L/home/wruslan/github/ada-k8055usb/obj/ 
+-L/usr/lib/gcc/x86_64-linux-gnu/9/adalib/ 
+-lgnarl-9 -lgnat-9 
+-lpthread -lrt -ldl -Wl,-rpath-link,
+/usr/lib/gcc/x86_64-linux-gnu/9//adalib -
+shared-libgcc -Wl,-z,origin,-rpath,
+$ORIGIN/..//obj:/usr/lib/gcc/x86_64-linux-gnu/9/adalib:/usr/lib64:
+/usr/lib -o /home/wruslan/github/ada-k8055usb/exec//main_ada_ck8055.xxx
+
+[2021-01-01 13:33:34] process exited with status 4, 100% (6/6), elapsed time: 01.27s
+
+===========================================================
+/usr/lib/libk8055.o
+/usr/local/lib/libk8055.o
+
+Ub2004-rt38:~/github/ada-k8055usb/exec$ ls -al /usr/local/lib/libk8055.o
+-rw-r--r-- 1 root root 47328 Apr 18  2020 /usr/local/lib/libk8055.o
+Ub2004-rt38:~/github/ada-k8055usb/exec$ 
+
+Ub2004-rt38:~/github/ada-k8055usb/exec$ ls -al /usr/lib/libk8055.o
+-rw-r--r-- 1 root root 47328 Apr 21  2020 /usr/lib/libk8055.o
+Ub2004-rt38:~/github/ada-k8055usb/exec$ 
+
+===========================================================
+
+===========================================================
+gprbuild: link of main_ada_ck8055.adb failed
+gprbuild: failed command was: 
+/usr/bin/g++ main_ada_ck8055.o b__main_ada_ck8055.o 
+/home/wruslan/github/ada-k8055usb/obj/pkg_ada_ck8055.o 
+/home/wruslan/github/ada-k8055usb/obj/pkg_aada_ck8055.o 
+/home/wruslan/github/ada-k8055usb/obj/pkg_ada_dtstamp.o 
+libgpr_ada_ck8055.a -O2 -lk8055 
+-L/home/wruslan/github/ada-k8055usb/obj/ 
+-L/home/wruslan/github/ada-k8055usb/obj/ 
+-L/usr/lib/gcc/x86_64-linux-gnu/9/adalib/ 
+-lgnarl-9 -lgnat-9 
+-lpthread -lrt -ldl -Wl,-rpath-link,
+/usr/lib/gcc/x86_64-linux-gnu/9//adalib -
+shared-libgcc -Wl,-z,origin,-rpath,
+$ORIGIN/..//obj:/usr/lib/gcc/x86_64-linux-gnu/9/adalib:/usr/lib64:
+/usr/lib -o /home/wruslan/github/ada-k8055usb/exec//main_ada_ck8055.xxx
+[2021-01-01 13:45:19] process exited with status 4, 100% (6/6), elapsed time: 01.05s
+
+===========================================================
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github/ada-k8055usb/exec$ ldd /usr/local/bin/k8055
+	linux-vdso.so.1 (0x00007ffd1c3be000)
+	libusb-0.1.so.4 => /usr/local/lib/libusb-0.1.so.4 (0x00007f4b2cfc7000)
+	libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007f4b2ce2a000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f4b2cc38000)
+	libusb-1.0.so.0 => /usr/local/lib/libusb-1.0.so.0 (0x00007f4b2ca1e000)
+	libudev.so.1 => /home/wruslan/opt/GNAT/2020/libexec/gcc/x86_64-pc-linux-gnu/9.3.1/libudev.so.1 (0x00007f4b2c9f2000)
+	libpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0 (0x00007f4b2c9cf000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f4b2d1cf000)
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github/ada-k8055usb/exec$ 
+
+==========================================================
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github/ada-k8055usb/exec$ ldd main_ada_ck8055.xxx 
+	linux-vdso.so.1 (0x00007ffc1af2f000)
+	libgnarl-9.so.1 => /usr/lib/x86_64-linux-gnu/libgnarl-9.so.1 (0x00007f7368400000)
+	libgnat-9.so.1 => /usr/lib/x86_64-linux-gnu/libgnat-9.so.1 (0x00007f736808c000)
+	libgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007f7368071000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f7367e7f000)
+	libpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0 (0x00007f7367e5c000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f73684b4000)
+	libdl.so.2 => /lib/x86_64-linux-gnu/libdl.so.2 (0x00007f7367e54000)
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github/ada-k8055usb/exec$ 
+
+===========================================================
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github/ada-k8055usb/exec$ ls -al /usr/local/bin | grep k8055 
+-rwxr-xr-x  1 root root   43896 Apr 18  2020 k8055
+-rw-r--r--  1 root root    5802 Nov 19 07:06 k8055_analog_datascope.py
+-rwxr-xr-x  1 root root    1528 Nov 19 09:09 k8055_analog_datascope.sh
+-rwxr-xr-x  1 root root 1142776 Apr 18  2020 k8055d
+-rw-r--r--  1 root root   11375 Nov 21 16:22 k8055_digital_datascope.py
+-rwxr-xr-x  1 root root    1538 Nov 19 09:09 k8055_digital_datascope.sh
+-rwxr-xr-x  1 root root  229336 Apr 18  2020 k8055gui
+-rwxr-xr-x  1 root root    8288 Nov 19 08:19 k8055-info-wry
+-rwxr-xr-x  1 root root 2016896 Apr 18  2020 k8055m
+-rwxr-xr-x  1 root root     374 Nov 19 17:04 k8055-MUST-README.sh
+-rwxr-xr-x  1 root root    3751 Nov 19 08:19 k8055.py
+-rwxr-xr-x  1 root root    6840 Nov 19 08:20 k8055qt.py
+-rwxr-xr-x  1 root root 2333296 Apr 18  2020 k8055s
+-rwxr-xr-x  1 root root     310 Nov 19 08:22 k8055-test1.sh
+-rwxr-xr-x  1 root root     888 Nov 19 08:22 k8055-test2.sh
+-rwxr-xr-x  1 root root     929 Nov 19 08:23 k8055-test3.sh
+-rwxr-xr-x  1 root root    2370 Nov 19 08:23 k8055testm.py
+-rwxr-xr-x  1 root root    1534 Nov 19 08:24 k8055test.py
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github/ada-k8055usb/exec$ 
+
+===========================================================
+TO CONTINUE ...
+/usr/lib/libk8055.a
+/usr/lib/libk8055.c
+/usr/lib/libk8055.o
+/usr/lib/libk8055.so
+/usr/lib/libk8055.so.0.4.1
+/usr/local/lib/libk8055.a
+/usr/local/lib/libk8055.c
+/usr/local/lib/libk8055.o
+/usr/local/lib/libk8055.so
+/usr/local/lib/libk8055.so.0.4.1
+
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github/ada-k8055usb/exec$ 
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github/ada-k8055usb/exec$ ldd /usr/lib/libk8055.a
+	not a dynamic executable
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github/ada-k8055usb/exec$ ldd /usr/lib/libk8055.so
+	linux-vdso.so.1 (0x00007ffd9e995000)
+	libusb-0.1.so.4 => /usr/local/lib/libusb-0.1.so.4 (0x00007f1ea6820000)
+	libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007f1ea6683000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f1ea6491000)
+	libusb-1.0.so.0 => /usr/local/lib/libusb-1.0.so.0 (0x00007f1ea6277000)
+	libudev.so.1 => /home/wruslan/opt/GNAT/2020/libexec/gcc/x86_64-pc-linux-gnu/9.3.1/libudev.so.1 (0x00007f1ea624b000)
+	libpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0 (0x00007f1ea6228000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f1ea6c2c000)
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github/ada-k8055usb/exec$ 
+
+===========================================================
+
+===========================================================
+BEFORE ACTIVATE ret_board_address := PACK8055.GetC_ada_open_device (board_address);
+===========================================================
+gprbuild -d -P/home/wruslan/github/ada-k8055usb/gpr_ada_ck8055.gpr -s -k
+Compile
+   [Ada]          main_ada_ck8055.adb
+   [C++]          cppk8055.cpp
+   [C]            libk8055.c              <=== ADDED THIS FILE
+   [C]            ck8055.c
+   [Ada]          pkg_aada_ck8055.adb
+   [Ada]          pkg_ada_ck8055.ads
+   [Ada]          pkg_ada_dtstamp.adb
+Bind
+   [gprbind]      main_ada_ck8055.bexch
+   [Ada]          main_ada_ck8055.ali
+Link
+   [archive]      libgpr_ada_ck8055.a
+   [index]        libgpr_ada_ck8055.a
+   [link]         main_ada_ck8055.adb
+[2021-01-01 14:32:54] process terminated successfully, elapsed time: 02.16s
+
+LINKING PROBLEM
+===========================================================
+AFTER ACTIVATE: ret_board_address := PACK8055.GetC_ada_open_device (board_address);
+===========================================================
+gprbuild -d -P/home/wruslan/github/ada-k8055usb/gpr_ada_ck8055.gpr -s -k
+Compile
+   [Ada]          main_ada_ck8055.adb
+   [C++]          cppk8055.cpp
+   [C]            libk8055.c
+   [C]            ck8055.c
+   [Ada]          pkg_aada_ck8055.adb
+   [Ada]          pkg_ada_ck8055.ads
+   [Ada]          pkg_ada_dtstamp.adb
+Bind
+   [gprbind]      main_ada_ck8055.bexch
+   [Ada]          main_ada_ck8055.ali
+Link
+   [archive]      libgpr_ada_ck8055.a
+   [index]        libgpr_ada_ck8055.a
+   [link]         main_ada_ck8055.adb
+/usr/bin/ld: libgpr_ada_ck8055.a(ck8055.o): in function `init_usb':
+ck8055.c:(.text+0x13): undefined reference to `usb_init'
+/usr/bin/ld: ck8055.c:(.text+0x18): undefined reference to `usb_find_busses'
+/usr/bin/ld: ck8055.c:(.text+0x1d): undefined reference to `usb_find_devices'
+/usr/bin/ld: ck8055.c:(.text+0x22): undefined reference to `usb_get_busses'
+/usr/bin/ld: libgpr_ada_ck8055.a(ck8055.o): in function `ReadK8055Data':
+ck8055.c:(.text+0xa1): undefined reference to `usb_interrupt_read'
+/usr/bin/ld: libgpr_ada_ck8055.a(ck8055.o): in function `WriteK8055Data':
+ck8055.c:(.text+0x1b4): undefined reference to `usb_interrupt_write'
+/usr/bin/ld: libgpr_ada_ck8055.a(ck8055.o): in function `takeover_device':
+ck8055.c:(.text+0x297): undefined reference to `usb_get_driver_np'
+/usr/bin/ld: ck8055.c:(.text+0x2ed): undefined reference to `usb_detach_kernel_driver_np'
+/usr/bin/ld: ck8055.c:(.text+0x304): undefined reference to `usb_strerror'
+/usr/bin/ld: ck8055.c:(.text+0x333): undefined reference to `usb_strerror'
+/usr/bin/ld: ck8055.c:(.text+0x362): undefined reference to `usb_strerror'
+/usr/bin/ld: ck8055.c:(.text+0x397): undefined reference to `usb_claim_interface'
+/usr/bin/ld: ck8055.c:(.text+0x3aa): undefined reference to `usb_strerror'
+/usr/bin/ld: ck8055.c:(.text+0x3e6): undefined reference to `usb_set_altinterface'
+/usr/bin/ld: ck8055.c:(.text+0x3fa): undefined reference to `usb_set_configuration'
+/usr/bin/ld: libgpr_ada_ck8055.a(ck8055.o): in function `OpenDevice':
+ck8055.c:(.text+0x532): undefined reference to `usb_open'
+/usr/bin/ld: ck8055.c:(.text+0x5e9): undefined reference to `usb_close'
+/usr/bin/ld: libgpr_ada_ck8055.a(ck8055.o): in function `CloseDevice':
+ck8055.c:(.text+0x724): undefined reference to `usb_close'
+collect2: error: ld returned 1 exit status
+gprbuild: link of main_ada_ck8055.adb failed
+gprbuild: failed command was: /usr/bin/g++ main_ada_ck8055.o b__main_ada_ck8055.o /home/wruslan/github/ada-k8055usb/obj/pkg_ada_ck8055.o /home/wruslan/github/ada-k8055usb/obj/pkg_aada_ck8055.o /home/wruslan/github/ada-k8055usb/obj/pkg_ada_dtstamp.o libgpr_ada_ck8055.a -O2 -lk8055 -L/home/wruslan/github/ada-k8055usb/obj/ -L/home/wruslan/github/ada-k8055usb/obj/ -L/usr/lib/gcc/x86_64-linux-gnu/9/adalib/ -lgnarl-9 -lgnat-9 -lpthread -lrt -ldl -Wl,-rpath-link,/usr/lib/gcc/x86_64-linux-gnu/9//adalib -
+shared-libgcc -Wl,-z,origin,-rpath,$ORIGIN/..//obj:/usr/lib/gcc/x86_64-linux-gnu/9/adalib:/usr/lib64:/usr/lib -o /home/wruslan/github/ada-k8055usb/exec//main_ada_ck8055.xxx
+[2021-01-01 14:35:35] process exited with status 4, 100% (7/7), elapsed time: 02.17s
+
+===========================================================
+TO CONTINUE ...
+
+

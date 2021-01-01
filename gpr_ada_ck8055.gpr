@@ -70,14 +70,14 @@ project gpr_ada_ck8055 is
    package Linker is
    
         for Default_Switches ("Ada") use ("-O2");
-        -- for Switches ("Ada") use ("-v");       -- VERBOSE LINKING
+        for Switches ("Ada") use ("-O2", "-lk8055");    -- Same like -lplplot 
         
         -- VERBOSE IT WORKS   
 		-- for Switches ("C")   use ("-v", "-liconv", "-lpthread", "-lm", "-lrt");  
 		-- for Switches ("C++") use ("-v", "-liconv", "-lpthread", "-lm", "-lrt");  
         
         -- NOT VERBOSE ALSO WORKS  
-        for Switches ("C")   use ("-liconv", "-lpthread", "-lm", "-lrt");
+        for Switches ("C")   use ("-lk8055", "-liconv", "-lpthread", "-lm", "-lrt");
         for Switches ("C++") use ("-liconv", "-lpthread", "-lm", "-lrt");  
         
    end Linker;

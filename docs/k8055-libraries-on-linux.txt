@@ -1,0 +1,17 @@
+
+Ub2004-rt38:~$ locate k8055.so
+/usr/lib/libk8055.so
+/usr/lib/libk8055.so.0.4.1
+/usr/local/lib/libk8055.so
+/usr/local/lib/libk8055.so.0.4.1
+/usr/local/lib/python2.7/dist-packages/_k8055.so
+/usr/local/lib/python2.7/dist-packages/_pyk8055.so
+Ub2004-rt38:~$
+
+Ub2004-rt38:~$ ls -al /usr/local/lib | grep k8055
+-rw-r--r--  1 root    root       47982 Apr 18  2020 libk8055.a
+-rw-r--r--  1 root    root       17039 Apr 18  2020 libk8055.c
+-rw-r--r--  1 root    root       47328 Apr 18  2020 libk8055.o
+lrwxrwxrwx  1 root    root          17 Apr 18  2020 libk8055.so -> libk8055.so.0.4.1
+-rwxr-xr-x  1 root    root       38720 Apr 18  2020 libk8055.so.0.4.1
+Ub2004-rt38:~$ 

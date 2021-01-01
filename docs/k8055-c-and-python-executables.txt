@@ -1,0 +1,36 @@
+
+Ub2004-rt38:~$ ls -al /usr/local/bin | grep k8055
+-rwxr-xr-x  1 root root   43896 Apr 18  2020 k8055
+-rw-r--r--  1 root root    5802 Nov 19 07:06 k8055_analog_datascope.py
+-rwxr-xr-x  1 root root    1528 Nov 19 09:09 k8055_analog_datascope.sh
+-rwxr-xr-x  1 root root 1142776 Apr 18  2020 k8055d
+-rw-r--r--  1 root root   11375 Nov 21 16:22 k8055_digital_datascope.py
+-rwxr-xr-x  1 root root    1538 Nov 19 09:09 k8055_digital_datascope.sh
+-rwxr-xr-x  1 root root  229336 Apr 18  2020 k8055gui
+-rwxr-xr-x  1 root root    8288 Nov 19 08:19 k8055-info-wry
+-rwxr-xr-x  1 root root 2016896 Apr 18  2020 k8055m
+-rwxr-xr-x  1 root root     374 Nov 19 17:04 k8055-MUST-README.sh
+-rwxr-xr-x  1 root root    3751 Nov 19 08:19 k8055.py
+-rwxr-xr-x  1 root root    6840 Nov 19 08:20 k8055qt.py
+-rwxr-xr-x  1 root root 2333296 Apr 18  2020 k8055s
+-rwxr-xr-x  1 root root     310 Nov 19 08:22 k8055-test1.sh
+-rwxr-xr-x  1 root root     888 Nov 19 08:22 k8055-test2.sh
+-rwxr-xr-x  1 root root     929 Nov 19 08:23 k8055-test3.sh
+-rwxr-xr-x  1 root root    2370 Nov 19 08:23 k8055testm.py
+-rwxr-xr-x  1 root root    1534 Nov 19 08:24 k8055test.py
+Ub2004-rt38:~$ 
+
+Ub2004-rt38:~$ ls -al /usr/local/include | grep k8055
+-rw-r--r--  1 root root  1922 Apr 18  2020 k8055.h
+-rw-r--r--  1 root root  3819 Apr 21  2020 k8055.hpp
+Ub2004-rt38:~$ 
+
+Ub2004-rt38:~$ ls -al /usr/local/lib | grep k8055
+-rw-r--r--  1 root    root       47982 Apr 18  2020 libk8055.a
+-rw-r--r--  1 root    root       17039 Apr 18  2020 libk8055.c
+-rw-r--r--  1 root    root       47328 Apr 18  2020 libk8055.o
+lrwxrwxrwx  1 root    root          17 Apr 18  2020 libk8055.so -> libk8055.so.0.4.1
+-rwxr-xr-x  1 root    root       38720 Apr 18  2020 libk8055.so.0.4.1
+Ub2004-rt38:~$ 
+
+===========================================================
